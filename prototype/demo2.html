@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFun(){
+            this.subject=["C","C++","Java","JavaScript"];
+            this.year="4th";
+            this.semester="8th sem";
+        }
+        myFun.prototype.college="Sage";
+
+        let newObject=new myFun();
+        document.writeln(newObject);
+        document.writeln("<br>"+newObject.subject);
+        document.writeln("<br>"+newObject.year);
+        document.writeln("<br>"+newObject.semester);
+        document.writeln("<br>"+newObject.college);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
